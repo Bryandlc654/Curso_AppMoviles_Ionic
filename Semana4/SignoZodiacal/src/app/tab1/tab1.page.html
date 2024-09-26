@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" [(ngModel)]="fecha" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Signo</label>
+        <input type="text" class="form-control" value="{{respuesta}}"> 
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="Obtener()">Obtener</button>
+    </form>
+  </div>
+</ion-content>
